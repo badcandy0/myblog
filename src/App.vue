@@ -1,28 +1,32 @@
+<!--
+ * @Author: Badcandy 568197314@qq.com
+ * @Date: 2022-10-04 15:58:39
+ * @LastEditors: Badcandy 568197314@qq.com
+ * @LastEditTime: 2022-10-04 16:26:30
+ * @FilePath: \myblog\src\App.vue
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by Badcandy 568197314@qq.com, All Rights Reserved. 
+-->
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Aside />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Aside from "@/components/Aside";
+import Footer from "@/components/Footer";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Aside,
+    Footer,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
