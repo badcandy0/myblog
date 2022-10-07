@@ -2,7 +2,7 @@
  * @Author: Badcandy 568197314@qq.com
  * @Date: 2022-10-04 16:14:48
  * @LastEditors: Badcandy 568197314@qq.com
- * @LastEditTime: 2022-10-06 16:38:03
+ * @LastEditTime: 2022-10-07 16:57:49
  * @FilePath: \myblog\src\components\Footer\index.vue
  * @Description: 
  * 
@@ -10,7 +10,6 @@
 -->
 <template>
 <div id="copyright">
-    <el-divider></el-divider>
     <div class="coptrigth_text">
         <span>©2022~{{getdate()}} <el-link href="https://github.com/badcandy0">Badcandy</el-link> 拥有所有权利 </span>
     </div>
@@ -38,7 +37,7 @@ export default {
 
 #copyright{
     position: absolute;
-    width: 65%;
+    
 
 }
 

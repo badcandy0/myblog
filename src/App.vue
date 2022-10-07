@@ -2,18 +2,18 @@
  * @Author: Badcandy 568197314@qq.com
  * @Date: 2022-10-04 15:58:39
  * @LastEditors: Badcandy 568197314@qq.com
- * @LastEditTime: 2022-10-06 17:06:26
+ * @LastEditTime: 2022-10-07 16:51:45
  * @FilePath: \myblog\src\App.vue
  * @Description: 
  * 
  * Copyright (c) 2022 by Badcandy 568197314@qq.com, All Rights Reserved. 
 -->
 <template>
-  <el-container>
-    <el-aside>
+  <el-container class="container">
+    <el-aside class="aside">
         <Aside></Aside>
       </el-aside>
-    <el-container>
+    <el-container class="container_1">
       <el-header>
         <Header></Header>
       </el-header>
@@ -21,7 +21,7 @@
         <router-view></router-view>
       </el-main>
       <el-Footer>
-        <Footer></Footer>
+        <!-- <Footer></Footer> -->
       </el-Footer>
     </el-container>
     <el-backtop ></el-backtop>
@@ -44,4 +44,16 @@ export default {
 </script>
 
 <style>
+
+  .container{
+    position: absolute;
+    width: 90%;
+  }
+  .container_1{
+    position: relative;
+    margin-left:280px;
+  }
+  .aside{
+    position: fixed;
+  }
 </style>

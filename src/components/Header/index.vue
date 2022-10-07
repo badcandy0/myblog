@@ -2,7 +2,7 @@
  * @Author: Badcandy 568197314@qq.com
  * @Date: 2022-10-06 12:54:53
  * @LastEditors: Badcandy 568197314@qq.com
- * @LastEditTime: 2022-10-06 16:53:59
+ * @LastEditTime: 2022-10-07 15:44:19
  * @FilePath: \myblog\src\components\Header\index.vue
  * @Description: 
  * 
@@ -26,6 +26,7 @@
           <i slot="prefix" class="el-input__icon el-icon-search"></i> </el-input
       ></el-col>
     </el-row>
+    <el-divider></el-divider>
   </div>
 </template>
 
