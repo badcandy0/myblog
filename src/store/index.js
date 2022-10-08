@@ -2,7 +2,7 @@
  * @Author: Badcandy 568197314@qq.com
  * @Date: 2022-10-07 20:00:14
  * @LastEditors: Badcandy 568197314@qq.com
- * @LastEditTime: 2022-10-07 20:08:27
+ * @LastEditTime: 2022-10-08 14:39:55
  * @FilePath: \myblog\src\store\index.js
  * @Description: 配置store仓库
  * 
@@ -11,7 +11,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 // 使用插件一次
-Vue.use(vuex);
+Vue.use(Vuex);
 
 // state:仓库存储数据的地方
 const state = {};
