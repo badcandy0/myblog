@@ -2,7 +2,7 @@
  * @Author: Badcandy 568197314@qq.com
  * @Date: 2022-10-04 16:03:19
  * @LastEditors: Badcandy 568197314@qq.com
- * @LastEditTime: 2022-10-04 17:20:51
+ * @LastEditTime: 2022-10-11 16:03:02
  * @FilePath: \myblog\src\router\index.js
  * @Description: 
  * 
@@ -18,6 +18,7 @@ import About from '@/pages/About';
 import Label from '@/pages/Label';
 import Classify from '@/pages/Classify';
 import Archive from '@/pages/Archive';
+import Search from '@/pages/Search';
 
 
 
@@ -43,9 +44,15 @@ export default new Vuerouter({
             path: '/archive',
             component: Archive
         },
-        // {
-        //     path: '*',
-        //     redirect:Home
-        // }
+        {
+            path:'/search/:keyword?',
+            component:Search,
+            props:true,
+            name:"search"
+        },
+        {
+            path: '*',
+            redirect:'/home'
+        }
     ]
 });

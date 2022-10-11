@@ -2,7 +2,7 @@
  * @Author: Badcandy 568197314@qq.com
  * @Date: 2022-10-04 17:06:50
  * @LastEditors: Badcandy 568197314@qq.com
- * @LastEditTime: 2022-10-06 16:59:22
+ * @LastEditTime: 2022-10-11 10:28:49
  * @FilePath: \myblog\src\pages\Archive\index.vue
  * @Description: 
  * 
@@ -32,18 +32,30 @@
     </el-timeline-item>
   </el-timeline>
     </div>
+    <div class="copyright">
+      <el-divider></el-divider>
+      <Footer></Footer>
+    </div>
   </div>
 </template>
 
 <script>
+import Footer from "@/components/Footer";
 export default {
     name:"Archive",
+    components:{
+      Footer
+    }
 }
 </script>
 
 <style scoped>
 #Archive{
   position: absolute;
-  
+  width: 100%;
+}
+.copyright {
+  position: relative;
+  margin-bottom: 75px;
 }
 </style>

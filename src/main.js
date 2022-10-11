@@ -2,7 +2,7 @@
  * @Author: Badcandy 568197314@qq.com
  * @Date: 2022-10-04 15:58:39
  * @LastEditors: Badcandy 568197314@qq.com
- * @LastEditTime: 2022-10-07 20:51:36
+ * @LastEditTime: 2022-10-10 15:36:59
  * @FilePath: \myblog\src\main.js
  * @Description: 文件入口
  * 
@@ -16,6 +16,8 @@ import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios';
 // 引入仓库
 import store from './store';
+// 引入模拟数据
+// import "./mock/mockServe";
 
 
 Vue.config.productionTip = false;
@@ -27,7 +29,6 @@ new Vue({
   render: h => h(App),
   // 注册路由
   router,
-  el:'#app',
   // 注册仓库:组件实例身上会多一个属性$store属性
   store,
   

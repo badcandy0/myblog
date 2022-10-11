@@ -2,7 +2,7 @@
  * @Author: Badcandy 568197314@qq.com
  * @Date: 2022-10-07 19:08:37
  * @LastEditors: Badcandy 568197314@qq.com
- * @LastEditTime: 2022-10-07 19:52:55
+ * @LastEditTime: 2022-10-11 16:59:41
  * @FilePath: \myblog\src\api\request.js
  * @Description: 
  * 
@@ -19,7 +19,7 @@ import 'nprogress/nprogress.css';
 const requests = axios.create({
     // 配置对象
     // 基础路径，发请求时，路径当中会出现api
-    baseURL:"/api",
+    // baseURL:"/api",
     // 请求超时时间
     timeout: 5000,
 });

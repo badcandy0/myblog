@@ -2,7 +2,7 @@
  * @Author: Badcandy 568197314@qq.com
  * @Date: 2022-10-06 12:54:53
  * @LastEditors: Badcandy 568197314@qq.com
- * @LastEditTime: 2022-10-07 15:44:19
+ * @LastEditTime: 2022-10-11 16:05:23
  * @FilePath: \myblog\src\components\Header\index.vue
  * @Description: 
  * 
@@ -22,8 +22,9 @@
         </el-breadcrumb></el-col
       >
       <el-col :span="8"
-        ><el-input placeholder="请输入内容" v-model="input">
-          <i slot="prefix" class="el-input__icon el-icon-search"></i> </el-input
+        ><el-input placeholder="请输入内容" v-model="keyword"  clearable>
+          <el-button slot="append" @click="goSearch" icon="el-icon-search"></el-button>
+          </el-input
       ></el-col>
     </el-row>
     <el-divider></el-divider>
@@ -35,9 +36,15 @@ export default {
   name: "Header",
   data() {
     return {
-      input: "",
+      keyword: "",
     };
   },
+  methods: {
+    goSearch(){
+
+      this.$router.push({name:"search",params:{keyword:this.keyword}});
+    }
+  }
 };
 </script>
 

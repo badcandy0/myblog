@@ -2,7 +2,7 @@
  * @Author: Badcandy 568197314@qq.com
  * @Date: 2022-10-04 16:15:06
  * @LastEditors: Badcandy 568197314@qq.com
- * @LastEditTime: 2022-10-06 16:45:38
+ * @LastEditTime: 2022-10-11 09:30:12
  * @FilePath: \myblog\src\components\Aside\index.vue
  * @Description: 
  * 
@@ -21,32 +21,32 @@
       >
     </div>
     <div class="menu">
-      <el-menu default-active="1" router="true">
-        <el-menu-item index="1" route="/home">
+      <el-menu :default-active="this.$route.path" :router="true">
+        <el-menu-item index="/home" >
           <template>
             <i class="el-icon-s-home"></i>
             <span>首页</span>
           </template>
         </el-menu-item>
-        <el-menu-item index="2" route="/classify">
+        <el-menu-item index="/classify" >
           <template>
             <i class="el-icon-menu"></i>
             <span>分类</span>
           </template></el-menu-item
         >
-        <el-menu-item index="3" route="/label">
+        <el-menu-item index="/label" >
           <template>
             <i class="el-icon-collection-tag"></i>
             <span>标签</span>
           </template></el-menu-item
         >
-        <el-menu-item index="4" route="/archive">
+        <el-menu-item index="/archive" >
           <template>
             <i class="el-icon-date"></i>
             <span>归档</span>
           </template></el-menu-item
         >
-        <el-menu-item index="5" route="/about">
+        <el-menu-item index="/about" >
           <template>
             <i class="el-icon-info"></i>
             <span>关于</span>
